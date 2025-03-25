@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #2061CB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.toDoContainer{
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.toDoContainer h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#inputTask{
+  width: 100%;
+  font-size: 22px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.addTask{
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2061CB;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .2s linear;
+}
+.addTask:hover{
+  background-color: #3476f9c3;
+}
+.tasks{
+  margin-top: 40px;
+}
+.tasks li{
+  list-style: none;
+  margin-top: 30px;
+  background-color: #c7daff;
+  padding: 10px;
+  font-size: 25px;
+  margin: 5px 0;
+  transition: .2s linear;
+}
+.tasks li:hover{
+  background-color: #8ea9de;
+}
+
+.delete{
+  color: rgb(243, 241, 241);
+  background-color: #2061CB;
+  font-size: 14px;
+  padding: 8px;
+  float: right;
+  cursor: pointer;
+  transition: .2s linear;
+}
+.delete:hover{
+  background-color: rgb(217, 27, 27);
+}
