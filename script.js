@@ -5,7 +5,11 @@ let ulEl = document.querySelector(".tasks")
 addButtonEl.addEventListener("click", () => {
   addToDo();
 })
-
+inputEl.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    addToDo();
+  }
+})
 function addToDo() {
   if (inputEl.value === "") {
     return alert("Please enter a task")
@@ -17,7 +21,6 @@ function addToDo() {
   liEl.appendChild(spanEl)
   spanEl.addEventListener("click", () => {
     liEl.remove();
-
   })
   ulEl.appendChild(liEl)
 
